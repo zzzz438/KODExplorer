@@ -1,0 +1,50 @@
+
+
+.comicBox
+{
+	background-color: black;
+	position: absolute;
+	top:0px;
+	bottom: 0px;
+	right:0px;
+	left:0px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.comicBar
+{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	width: 100%;
+	background-color: rgba( 0 , 0 , 0 , .5  );
+	color:white;
+	opacity: 0;
+}
+
+.comicBar a
+{
+	color: white;
+	display: inline-block;
+	padding:10px;
+}
+
+.comicBar a:hover
+{
+	background-color: #52A7F1;
+
+}
+
+
+.comicBar:hover
+{
+	opacity: 1;
+}
+
+
+.comicImage
+{
+	max-height: 100%;
+	max-width: 100%;
+}
