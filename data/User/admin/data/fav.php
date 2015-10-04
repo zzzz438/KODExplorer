@@ -1,0 +1,1 @@
+<?php exit;?>{"comic":{"name":"comic","path":"\/var\/www\/html\/comic\/"}}
