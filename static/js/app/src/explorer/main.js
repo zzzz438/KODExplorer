@@ -3080,7 +3080,7 @@ define("app/src/explorer/main", ["lib/jquery-lib", "lib/util", "lib/ztree/js/ztr
                     var a = fileLight.type(Global.fileListSelect);
                     console.log(a);
                     
-                    ("rar" == a || "zip" == a ) ? e.find(".unzip").show() : e.find(".unzip").hide(), inArray(core.filetype.image, a) ? e.find(".setBackground").show() : e.find(".setBackground").hide(), "oexe" == a ? e.find(".app_edit").show() : e.find(".app_edit").hide(), inArray(core.filetype.image, a) || inArray(core.filetype.music, a) || inArray(core.filetype.movie, a) || inArray(core.filetype.bindary, a) || inArray(core.filetype.doc, a) ? e.find(".open_text").hide() : e.find(".open_text").show();
+                    ("7z" == a || "rar" == a || "zip" == a ) ? e.find(".unzip").show() : e.find(".unzip").hide(), inArray(core.filetype.image, a) ? e.find(".setBackground").show() : e.find(".setBackground").hide(), "oexe" == a ? e.find(".app_edit").show() : e.find(".app_edit").hide(), inArray(core.filetype.image, a) || inArray(core.filetype.music, a) || inArray(core.filetype.movie, a) || inArray(core.filetype.bindary, a) || inArray(core.filetype.doc, a) ? e.find(".open_text").hide() : e.find(".open_text").show();
 
 
                 
