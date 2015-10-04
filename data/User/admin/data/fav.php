@@ -1,1 +1,0 @@
-<?php exit;?>{"comic":{"name":"comic","path":"\/Users\/Easy\/Downloads\/kodexplorer3.12\/comic\/"}}
