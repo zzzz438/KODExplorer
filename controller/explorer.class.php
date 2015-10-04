@@ -101,12 +101,9 @@ class explorer extends Controller{
         }
 
         //回收站不记录前进后退
-        if (isset($this->in['type'])){
-            if($this->in['path'] != '*recycle*/' && $this->in['type'] !=='desktop'){
-                $_SESSION['this_path']=$user_path;
-            }   
+        if($this->in['path'] != '*recycle*/' && $this->in['type'] !=='desktop'){
+            $_SESSION['this_path']=$user_path;
         }
-
         $list=$this->path($this->path);
         $list['history_status']= array('back'=>$hi->isback(),'next'=>$hi->isnext());
         show_json($list);
@@ -202,7 +199,7 @@ class explorer extends Controller{
             array('name'=>$this->L['root_path'],'children'=>$root,'menuType'=>"menuTreeRoot",
                 'iconSkin'=>"my",'open'=>true,'this_path'=> MYHOME,'isParent'=>$root_isparent),
             array('name'=>$this->L['public_path'],'children'=>$public,'menuType'=>"menuTreeRoot",
-                'iconSkin'=>"lib",'open'=>true,'this_path'=> PUBLIC_PATH,'isParent'=>$public_isparent)
+                'iconSkin'=>"lib",'open'=>true,'this_path'=> '*public*','isParent'=>$public_isparent)
         );
         show_json($tree_data);
     }
@@ -257,7 +254,7 @@ class explorer extends Controller{
         }
         $state = $error==0?true:false;
         $info = $success.' success,'.$error.' error';
-        if ($error==0) {
+        if (count($info_list) == 1 && $error==0) {
             $info = $this->L['remove_success'];
         }
         show_json($info,$state);
@@ -394,7 +391,7 @@ class explorer extends Controller{
     }
     public function pathPast(){
         if (!isset($_SESSION['path_copy'])){
-            show_json($this->L['clipboard_null'],false,array());
+            show_json($this->L['clipboard_null'],false,$data);
         }
 
         session_start();//re start
@@ -516,6 +513,11 @@ class explorer extends Controller{
             }
         }
     }
+    public function resize()
+    {
+        show_json('path='.$this->path);
+    }
+
     public function unzip(){
         load_class('pclzip');
         ini_set('memory_limit', '2028M');//2G;

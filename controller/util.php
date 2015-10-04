@@ -103,8 +103,7 @@ function checkExt($file,$changExt=false){
     $not_allow = $GLOBALS['auth']['ext_not_allow'];
     $ext_arr = explode('|',$not_allow);
     foreach ($ext_arr as $current) {
-        $current = trim($current);
-        if ($current !== '' && stristr($file,'.'.$current)){//含有扩展名
+        if (stristr($file,'.'.$current)){//含有扩展名
             return 0;
         }
     }

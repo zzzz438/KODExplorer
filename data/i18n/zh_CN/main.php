@@ -97,7 +97,7 @@ $L= array(
 	"new_user_app_desc"  		=>"应用中心的应用，多个用逗号隔开",
 	"auto_login"  				=>"游客自动登录",
 	"auto_login_desc"  			=>"默认登录用户名为<code>guest</code>的用户；开启后确保<code>guest</code>用户存在",
-	"first_in"  				=>"登录后默认进入",
+	"first_in"  				=>"登陆后默认进入",
 	"menu_name"  				=>"菜单名",
 	"menu_hidden"  				=> "隐藏",
 	"menu_show"  				=>"显示",
@@ -120,7 +120,7 @@ $L= array(
 	"php_env_error_file"  		=>"未开启 file_get_contents",
 	"php_env_error_path"  		=>"不可写",
 	"php_env_error_gd"  		=>"须开启php GD库, 否则验证码、缩略图使用将不正常",
-	"install_login"  			=>"您可以用如下账号登录",
+	"install_login"  			=>"您可以用如下账号登陆",
 	"install_enter"  			=>"进入系统",
 	"install_user_default"  	=>"管理员：admin/admin(请务必修改密码)<br/>普通用户：demo/demo<br/>游客用户：guest/guest",
 
@@ -135,7 +135,7 @@ $L= array(
 	"kod_name_copyright"  		=> "芒果云•资源管理器",
 
 	//login
-	"login"                      =>	"登录",
+	"login"                      =>	"登陆 ",
 	"guest_login"                =>	"游客登录",	
 	"username"                   =>	"用户名",
 	"password"                   =>	"密码",
@@ -148,7 +148,7 @@ $L= array(
 	"password_error"             =>	"密码错误!",
 	"password_not_null"          =>	"密码不能为空!",
 	"old_password_error"         =>	"原密码错误!",
-	"permission"                 =>	"权限",
+	"permission"                 =>	"权限!",
 	"permission_edit"            =>	"修改权限",
 	"no_permission"              =>	"管理员禁止了此权限!",
 	"no_permission_ext"          =>	"管理员禁止了该类型文件权限",
@@ -267,6 +267,8 @@ $L= array(
 	"edit_too_big"				 => "文件太大,不能大于20M",
 	"open_default"               =>	"默认方式打开",
 	"open_ie"                    =>	"浏览器打开",
+	"open_comic"                 =>	"漫画模式打开",
+	"resize_image"               =>	"优化图片",
 	"refresh"                    =>	"刷新",
 	"refresh_all"                =>	"强制刷新",
 	"newfile"                    =>	"新建文件",
@@ -346,7 +348,7 @@ $L= array(
 	"ui_editor"                  =>	"编辑器",
 	"adminer"                    =>	"adminer",
 	"ui_project_home"            =>	"项目主页",
-	"ui_login"                   =>	"登录",
+	"ui_login"                   =>	"登陆",
 	"ui_logout"                  =>	"退出",
 
 
@@ -392,7 +394,7 @@ $L= array(
 	"if_save_file"               =>	"文件尚未保存,是否保存？",
 	"if_remove"                  =>	"确认删除",
 	"member_remove_tips"         =>	"删除后该用户目录会被清空",
-	"group_remove_tips"          =>	"删除后该用户组用户无法登录<br/>(需要重新设置用户组)",
+	"group_remove_tips"          =>	"删除后该用户组用户无法登陆<br/>(需要重新设置用户组)",
 	"group_name"                 =>	"用户组名",
 	"group_name_tips"            =>	"建议英文名，不能重复",
 	"group_desc"            	 =>	"展示名称",
@@ -428,7 +430,7 @@ $L= array(
 	"group_role_group_edit"      =>	"编辑用户组",
 	"group_role_group_del"       =>	"删除用户组",
 	"group_role_ext_warning"     =>	"不允许此类文件的上传,<br/>重命名(重命名为指定扩展名),<br/>编辑保存,远程下载,解压",
-	"group_tips"=>"<li>1.用户组名不能重复，修改组名后原属于改组用户会自动关联</li><li>2.扩展名限制关系系统安全性，请务必谨慎操作<i>(如果在web目录下新建php;就意味着改程序的权限对此用户形同虚设)</i></li><li>3.用户管理、权限组管理；查看权限和增删改权限是绑定的；程序会自动关联</li><li>4.设定权限组能添加权限组后，后续权限是不继承的<i>（此权限相当于最高权限）</i></li>",	
+	"group_tips"=>"<li>1.用户组名不能重复，修改组名后原属于改组用户会自动关联</li><li>2.扩展名限制关系系统安全性，请务必谨慎操作<i>(果在web目录下新建php;就意味着改程序的权限对此用户形同虚设)</i></li><li>3.户管理、权限组管理；查看权限和增删改权限是绑定的；程序会自动关联</li><li>4.设定权限组能添加权限组后，后续权限是不继承的<i>（此权限相当于最高权限）</i></li>",	
 
 	//explorer_ajax
 	"not_null"                   =>	"必填项不能为空!",

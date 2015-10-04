@@ -1,5 +1,12 @@
-﻿KodExplorer(http://kalcaddle.com/)
+﻿KodExplorer for ComicLand
 ========
+为动漫下载镜像ComicLand定制的版本，共Docker镜像构建时使用。
+
+- exploer整合了momic漫画浏览器，通过文件夹邮件菜单可以对目录图片文件进行压缩后浏览，已适配移动端
+- 添加动漫下载应用「ComicLand」，在桌面和应用商店中可见。
+
+### KodExplorer介绍
+
   KodExplorer是一款开源的基于Web的在线文件管理、代码编辑器。它提供了类windows经典用户界面，一整套在线文件管理、文件预览、编辑、上传下载、在线解压缩、音乐播放功能。让你直接在浏览器端实现web开发、源码文件预览、网站部署。同时拥有与本地操作一样方便、快捷、安全的体验。
  `商业版授权请联系：kalcaddle#qq.com`
  

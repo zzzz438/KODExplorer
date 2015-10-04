@@ -33,10 +33,10 @@ $config['setting_system_default'] = array(
 	'system_password'	=> rand_string(10),
 	'system_name'		=> "KodExplorer",
 	'system_desc'		=> "——芒果云.资源管理器",
-	'path_hidden'		=> ".htaccess,.git,.DS_Store,.gitignore",//目录列表隐藏的项
+	'path_hidden'		=> ".htaccess,.git,.DS_Store",//目录列表隐藏的项
 	'auto_login'		=> "1",			// 是否自动登录；登录用户为guest
-	'first_in'			=> "explorer",	// 登录后默认进入[explorer desktop,editor]
-	'new_user_app'		=> "365日历,pptv直播,ps,qq音乐,搜狐影视,时钟,天气,水果忍者,计算器,豆瓣电台,音悦台,icloud",
+	'first_in'			=> "desktop",	// 登录后默认进入[explorer desktop,editor]
+	'new_user_app'		=> "ComicLand",
 	'new_user_folder'	=> "download,music,image,desktop"
 );
 
@@ -45,7 +45,8 @@ $config['setting_menu_default'] = array(
 	array('name'=>'desktop','type'=>'system','url'=>'index.php?desktop','target'=>'_self','use'=>'1'),
 	array('name'=>'explorer','type'=>'system','url'=>'index.php?explorer','target'=>'_self','use'=>'1'),
 	array('name'=>'editor','type'=>'system','url'=>'index.php?editor','target'=>'_self','use'=>'1'),
-	array('name'=>'adminer','type'=>'','url'=>'./lib/plugins/adminer/','target'=>'_blank','use'=>'1')
+	array('name'=>'ComicLand','type'=>'','url'=>'/download.html','target'=>'_blank','use'=>'1')
+	//array('name'=>'adminer','type'=>'','url'=>'./lib/plugins/adminer/','target'=>'_blank','use'=>'1')
 );
 
 //权限配置；精确到需要做权限控制的控制器和方法
