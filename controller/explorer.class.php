@@ -523,7 +523,7 @@ class explorer extends Controller{
         // unzip rar
         if( $ext == 'rar' )
         {
-            $cmd = 'unrar x ' .$this->path . ' ' . dirname($this->path) . ' > /dev/null 2>/dev/null & ';
+            $cmd = '7z x ' .$this->path . ' ' . dirname($this->path) . ' > /dev/null 2>/dev/null & ';
             //return show_json( $cmd );
             exec($cmd);
             return show_json($this->L['unzip_success']);
