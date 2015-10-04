@@ -3078,7 +3078,13 @@ define("app/src/explorer/main", ["lib/jquery-lib", "lib/util", "lib/ztree/js/ztr
             if (0 != e.length && 0 != t.length) {
                 if (e.find(".disable").addClass("disabled"), t.hasClass("menufile")) {
                     var a = fileLight.type(Global.fileListSelect);
-                    "zip" == a ? e.find(".unzip").show() : e.find(".unzip").hide(), inArray(core.filetype.image, a) ? e.find(".setBackground").show() : e.find(".setBackground").hide(), "oexe" == a ? e.find(".app_edit").show() : e.find(".app_edit").hide(), inArray(core.filetype.image, a) || inArray(core.filetype.music, a) || inArray(core.filetype.movie, a) || inArray(core.filetype.bindary, a) || inArray(core.filetype.doc, a) ? e.find(".open_text").hide() : e.find(".open_text").show()
+                    console.log(a);
+                    
+                    ("rar" == a || "zip" == a ) ? e.find(".unzip").show() : e.find(".unzip").hide(), inArray(core.filetype.image, a) ? e.find(".setBackground").show() : e.find(".setBackground").hide(), "oexe" == a ? e.find(".app_edit").show() : e.find(".app_edit").hide(), inArray(core.filetype.image, a) || inArray(core.filetype.music, a) || inArray(core.filetype.movie, a) || inArray(core.filetype.bindary, a) || inArray(core.filetype.doc, a) ? e.find(".open_text").hide() : e.find(".open_text").show();
+
+
+                
+
                 }
                 if (t.hasClass("dialog_menu")) {
                     var i = t.attr("id"),

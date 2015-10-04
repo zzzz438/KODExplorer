@@ -519,6 +519,16 @@ class explorer extends Controller{
     }
 
     public function unzip(){
+        $ext = strtolower( end(explode( '.' , $this->path )) );
+        // unzip rar
+        if( $ext == 'rar' )
+        {
+            $cmd = 'unrar x ' .$this->path . ' ' . dirname($this->path) . ' > /dev/null 2>/dev/null & ';
+            //return show_json( $cmd );
+            exec($cmd);
+            return show_json($this->L['unzip_success']);
+        }
+        // unzip zip
         load_class('pclzip');
         ini_set('memory_limit', '2028M');//2G;
         $path=$this->path; 
