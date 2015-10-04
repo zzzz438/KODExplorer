@@ -4717,9 +4717,13 @@ define("app/src/explorer/path", ["../../common/pathOperate", "../../tpl/fileinfo
             a.openIE(b().path)
         },
         openComic: function() {
+            //console.log(b().path+'~'+G.basic_path+'comic');
+            //console.log( b().path.replace( G.basic_path+'comic/' , "") );
+            //return false;
+            //console.log(G);
             if( b().type == 'folder' )
             {
-                var folder = b().path.replace( G.this_path , "");
+                var folder = b().path.replace( G.basic_path+'comic/' , "");
                 window.open( '/momic.html#'+folder );
                 //console.log(folder);
             }
