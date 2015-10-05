@@ -1,9 +1,11 @@
-﻿KodExplorer for ComicLand
+Modo.moe 定制版KodExplorer
 ========
-为动漫下载镜像ComicLand定制的版本，共Docker镜像构建时使用。
+为modo动漫云的WebOS定制的版本，供Docker镜像构建时使用。
 
-- exploer整合了momic漫画浏览器，通过文件夹邮件菜单可以对目录图片文件进行压缩后浏览，已适配移动端
-- 添加动漫下载应用「ComicLand」，在桌面和应用商店中可见。
+- 深度整合Modo漫画浏览器，能对图片进行压缩，方便支持通过浏览器和手机进行浏览。
+- 深度整合通用协议离线下载工具Aria2。
+- 添加离线下载应用：基于Aria2的GUI管理YAAW。
+
 
 ### KodExplorer介绍
 
@@ -66,3 +68,5 @@
 
 ## desktop
 ![](https://cloud.githubusercontent.com/assets/3761968/2583348/1b260572-b9d0-11e3-8f3e-3004dbbc63c9.png)
+
+
