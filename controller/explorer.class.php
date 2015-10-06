@@ -524,12 +524,12 @@ class explorer extends Controller{
         if( $ext == 'rar' )
         {
             //$cmd = '7z x ' .$this->path . ' ' . dirname($this->path) . ' > /dev/null 2>/dev/null & ';
-            $cmd = 'cd ' . dirname($this->path) . ' && unrar e ' .filename($this->path) . '  > /dev/null 2>/dev/null & ';
+            $cmd = 'cd ' . dirname($this->path) . ' && unrar e ' .basename($this->path) . '  > /dev/null 2>/dev/null & ';
             exec($cmd);
             return show_json($this->L['unzip_success']);
         }elseif( $ex == '7z' )
         {
-            $cmd = 'cd ' . dirname($this->path) . ' && 7z e ' .filename($this->path) . '  > /dev/null 2>/dev/null & ';
+            $cmd = 'cd ' . dirname($this->path) . ' && 7z e ' .basename($this->path) . '  > /dev/null 2>/dev/null & ';
             exec($cmd);
             return show_json($this->L['unzip_success']);
         }
