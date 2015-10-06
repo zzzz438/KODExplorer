@@ -805,7 +805,6 @@ var YAAW = (function() {
       },
 
     },
-
     setting: {
       init: function() {
         this.jsonrpc_path = $.Storage.get("jsonrpc_path") || location.protocol+"//token:{{token}}@"+(location.host.split(":")[0]||"localhost")+":6800"+"/jsonrpc";
