@@ -6,6 +6,8 @@ Modo.moe 定制版KodExplorer
 - 深度整合通用协议离线下载工具Aria2。
 - 添加离线下载应用：基于Aria2的GUI管理YAAW。
 
+所有组件请按照原协议使用，Modo漫画阅读器部分采用MIT协议。
+
 
 ### KodExplorer介绍
 
