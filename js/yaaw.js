@@ -808,7 +808,7 @@ var YAAW = (function() {
 
     setting: {
       init: function() {
-        this.jsonrpc_path = $.Storage.get("jsonrpc_path") || location.protocol+"//"+(location.host.split(":")[0]||"localhost")+":6800"+"/jsonrpc";
+        this.jsonrpc_path = $.Storage.get("jsonrpc_path") || location.protocol+"//token:{{token}}@"+(location.host.split(":")[0]||"localhost")+":6800"+"/jsonrpc";
         this.refresh_interval = Number($.Storage.get("refresh_interval") || 10000);
         this.finish_notification = Number($.Storage.get("finish_notification") || 1);
         this.add_task_option = $.Storage.get("add_task_option");
